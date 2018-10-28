@@ -1,0 +1,3 @@
+'Species'	'n'	'x bar'	's'
+'Mugil liza'	56	9.15	1.27
+'Pogonias cromis'	61	3.08	1.71

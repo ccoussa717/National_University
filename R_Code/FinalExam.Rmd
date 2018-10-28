@@ -1,0 +1,39 @@
+---
+title: "FinalExam"
+author: "ChrisCoussa"
+date: "10/27/2018"
+output: pdf_document
+---
+
+```{r}
+library(qcc)
+###### Question 13 ######
+# Part a
+# Setting the seed ensures R generates the same random numbers
+set.seed(10)
+# generating 50 random numbers
+normDis1 = rnorm(50, mean = 1.55)
+str(normDis1)
+# Q-Q plot, and Q-Q line
+qqnorm(normDis1)
+qqline(normDis1)
+
+# Part b
+# Mean with 75% Confidence Interval for normDis1
+t.test(normDis1, conf.level = .75)
+
+# Part c
+# R chart and x-bar chart
+x1Final = c(59.664, 59.661, 59.679, 59.665, 59.667, 59.673, 59.676,
+            59.648)
+x2Final = c(59.675, 59.648, 59.652, 59.654, 59.678, 59.657, 59.661,
+            59.651)
+# Creating a dataframe from the variables
+finalDataSet= data.frame(x1Final, x2Final)
+# X-bar chart. There are no out-of-control signals in this chart
+qcc(finalDataSet, type = "xbar")
+# R-chart. There are no out-of-control signals in this chart
+qcc(finalDataSet, type = "R")
+
+```
+

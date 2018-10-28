@@ -1,0 +1,85 @@
+---
+title: "Week3_Practice"
+author: "ChrisCoussa"
+date: "10/15/2018"
+output:
+  pdf_document: default
+  word_document: default
+---
+
+```{r}
+###### Week 3 Session 1 ######
+library(qcc)
+library(DevFarn2)
+library(readxl)
+
+
+# Importing a data frame from the DevFarn2 examples
+data(e2.16)
+# Summary of the e2.16 data frame (descriptive analysis of the data, range is max - min)
+summary(e2.16)
+
+# View the data frame in a separate window
+# View(e2.16)
+
+boxplot(e2.16, main = "Example", col = "red", horizontal = TRUE)
+# Boxplot shows 3 possible outliers at the bottom of the plot, under 20.
+
+###### Quantile-Quantile Plots (qq plot) ######
+# If you have a Normal Distribution of variables, take the qq plot of the data it
+# is a straight line. 2 variable dataset
+data(e2.18) 
+qqnorm(e2.18$X1) # the $x1 means that you are going into the e2.18 dataset and getting
+# the data for for the x1 variable
+
+###### Creating a data frame with Normal Distrubution using rnorm() ######
+dataW3s1  = rnorm(30, mean = 50, sd = 20)
+plot(dataW3s1, main = "Normal Distribution", col = "blue")
+# Given that the data frame dataW2s1 has Normal Distribution, the qq plot should be straight
+qqnorm(dataW3s1)
+
+###### Working with data of three variables (x1, x2, and y)
+data(e3.15)
+summary(e3.15)
+dim(e3.15)
+# Create a scatter matrix for all three data sets of the data frame
+# Use labels to change the labels of the plots
+pairs(e3.15, labels = c("Iron", "Aluminum", "Gold"), col = "gold", pch = 20)
+
+data("Bears")
+# str shows internal structure of the dataset, alternative to summary
+str(Bears)
+
+# Create a linear model from the Bears dataframe using 2 variables
+plot(Bears$Weight, Bears$Age, main = "Bear Data", xlab = "ID", ylab = "Age",
+     col = "black")
+# REMEBER: When you created a linear model you have to put your y variable first!
+# So reverse the order from your plot in order for the linear line to be correct.
+lmBears = lm(Bears$Age ~ Bears$Weight, data = Bears)
+summary(lmBears)
+# Yhat = 0.219x + 2.613
+abline(lmBears, col = "red")
+legend(x = 175, y=NULL, legend = "Yhat = 0.219x + 2.613", col = "black", bg = "white")
+
+###### Week 3 Day 6 ######
+
+# Working with data imprted from an Excel file
+
+# Bringing in the data from the excel file requires the redxl library and the file path
+ex01_01 <- read_excel("/Users/ccoussa717/Desktop/College Classes/National University/CSC220_AppliedStats/R_Code/data_sets/EXCEL/Chapter01/ex01-01.xls")
+hist(ex01_01$Percent_expenditures, main = "Example Data From Chapter One", breaks = 20, col = "red")
+boxplot(ex01_01, main = "Boxplot of Example Data", col = "blue")
+sd(ex01_01$Percent_expenditures) # Standard Deviation is 12.7411
+mean(ex01_01$Percent_expenditures) # Mean is 10.89167
+var(ex01_01$Percent_expenditures) # Variance is 162.3357
+
+ex01_04 <- read_excel("/Users/ccoussa717/Desktop/College Classes/National University/CSC220_AppliedStats/R_Code/data_sets/EXCEL/Chapter01/ex01-04.xls")
+linearModelEx04 = lm(ex01_04$Luminance ~ ex01_04$Time, data = ex01_04)
+plot(ex01_04, main = "New Example Data")
+summary(linearModelEx04) # Yhat = -8.388x + 22443.468
+abline(linearModelEx04, col = "green")
+
+
+```
+
+

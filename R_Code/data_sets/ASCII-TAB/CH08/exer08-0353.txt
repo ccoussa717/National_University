@@ -1,0 +1,4 @@
+'Pain_freq'	'Men'	'Women'
+'Never'	3048	1842
+'Sometimes'	1767	1411
+'Often'	590	734

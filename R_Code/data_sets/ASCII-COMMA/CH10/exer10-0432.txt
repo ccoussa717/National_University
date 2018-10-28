@@ -1,0 +1,5 @@
+'Factor','Desc','Units','Low(-1)','High(+1)'
+'A','H2SO4','M',0.1,0.25
+'B','Thiourea','g/l',0,5
+'C','Temperature','°C',70,90
+'D','Time','min',30,150

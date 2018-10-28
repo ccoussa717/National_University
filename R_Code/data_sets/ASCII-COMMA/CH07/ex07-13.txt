@@ -1,0 +1,5 @@
+'Temp','Type','n','g/L','SD'
+18,'Traditional',4,4,0.5
+18,'Slanted',4,3.7,0.3
+12,'Traditional',4,3.3,0.2
+12,'Slanted',4,2,0.3

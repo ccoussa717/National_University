@@ -1,0 +1,5 @@
+'Type of Stool'	'Subj 1'	'Subj 2'	'Subj 3'	'Subj 4'	'Subj 5'	'Subj 6'	'Subj 7'	'Subj 8'	'Subj 9'
+'A'	12	10	7	7	8	9	8	7	9
+'B'	15	14	14	11	11	11	12	11	13
+'C'	12	13	13	10	8	11	12	8	10
+'D'	10	12	9	9	7	10	11	7	8

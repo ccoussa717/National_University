@@ -1,0 +1,5 @@
+'height'	'orientation'	'placement'	'variation'
+'-'	'-'	'-'	11.63
+'-'	'+'	'+'	3.57
+'+'	'-'	'+'	5.57
+'+'	'+'	'-'	7.36

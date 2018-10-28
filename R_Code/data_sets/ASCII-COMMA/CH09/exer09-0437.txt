@@ -1,0 +1,4 @@
+'Operator','1st_brand','2nd_brand','3rd_brand'
+1,86,86,88
+2,85,86,91
+3,82,83,85

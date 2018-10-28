@@ -1,0 +1,4 @@
+'Brand','Sample size','Sample mean','Sample standard deviation'
+1,40,38376,1522
+2,32,42569,1711
+3,32,42123,1645

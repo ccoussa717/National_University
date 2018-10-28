@@ -1,0 +1,99 @@
+---
+title: "Week1_Homework"
+author: "ChrisCoussa"
+date: "10/4/2018"
+output: pdf_document
+---
+
+```{r}
+# Sec 1.2, Question 3
+
+myData = read.table("exer01-0203.txt", header = TRUE, sep = "\r")
+print(myData)
+
+stem(myData$C1)
+
+# Sec 1.3, Question 19
+
+# Part a
+a = 4
+b = 6
+data = c(a, b)
+plot(density(a, b))
+# Density curve is plotted. To verify the area under the curve is 1, use the formula for 
+# Area, A= bh where base is 6-4=2 and height is 1/(b-a) = .5 Therefore A = 2(.5) = 1
+
+# Part b
+# To find out what portion of the forms will be processed between 4.5 and 5.5 minuntes 
+# you use the same formula of 1/(b-a) but put it in the integral formula. Integral from 
+# 4.5 to 5.5 of 1/(6-4) dx = 1/2x form 4.5 to 5.5 = (.5)(5.5) - (.5)(4.5) = .5 So 50% 
+# of the forms will be processed in that time.
+
+# Part C
+# To find what value separates the slower half from the faster half, you can examine the 
+# graph and see it's 5, or you can solve for the mean. mu = (4 + 6) / 2 = 5
+
+# Part d (extra, did it then saw the instructions to only do a, b, and c)
+# The best 10% will happen before a + 10%(b-a) = 4 + (.1)(6-4) = 4 + .2 = 4.2  4.2 is the 
+# value that separates the best 10% from the other 90%
+
+
+# Sec 1.4 Question 32 (all parts)
+# Part a
+# The value of z such that the area under the standard normal curve is .9082 is 1.33
+
+# Part b
+# The value of z such that the area under the standard normal curve to the left of the 
+# value is .9080 is 1.325. To get this value find the row with .9080. It's close to 1.32 
+# and 1.33. Take the average of the two and you get 1.325
+
+# Part c
+#Value of z such that the area under the curve to the right of z is .121 In order to use 
+# the z table to find the area to the right (or above) the z number, you subtract 
+# 1 - .121 = .879 Find that on the table and the value of z is 1.17.
+
+# Part d
+# What value of z* is such that the area under the standard normal curve between -z and z
+# is .754?
+# Since the standard curve is symmetrical, we can divide the percentage in half to get both
+# sides. .754/2 = .377 is the percentage in the middle of the two points.
+# Find the -z value that corresponds with .377, -z = -.31 (This is the area to the left)
+# Find the +z value (the area to the right) 1 - .377 = .623, z = .31
+# Therefore z = +- .31
+
+# Part e
+# How far to the right of 0 would you have to go to capture an upper-tail(to the right of)
+# z curve area of .002? How far to the left would you have to go to capture this same 
+# lower-tail area?
+# Upper-tail: 1 - .002 = .998 gives a z value of 2.88
+# Using symmetry to get the same curve on the left we get z = -2.88.
+
+# Sec 2.1 Question 1
+
+# Part a
+myData2 = read.table("exer02-0101.txt", header = TRUE, sep = "\r")
+# print(myData2$Sales)
+myMean = mean(myData2$Sales)
+print(myMean)
+myMedian = median(myData2$Sales)
+print(myMedian)
+
+# Part b
+myData2 = read.table("exer02-0101 copy.txt", header = TRUE, sep = "\r")
+# print(myData2$Sales)
+myMean = mean(myData2$Sales)
+print(myMean)
+myMedian = median(myData2$Sales)
+print(myMedian)
+
+# Question 8
+# A target is located at the point 0 on the horizontal axis. Let x be
+# the landing point of a shot aimed at the target, a continuous
+# variable with density function f(x) = .75(1-x^2) for -1<x<1.
+# What is the mean value of x?
+# Using the integral formula for mean: Integral from -1 to 1
+# of.75x(1-x^)dx = .75 integral from -1 to 1 of (x-x^3) dx = 0
+# Therefore mean value of x is 0.
+
+```
+

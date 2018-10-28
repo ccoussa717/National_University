@@ -1,0 +1,6 @@
+'source_var'	'df'	'SS'	'MS'	'F'	'C6'
+'A_factor'		20		' '	' '
+'B_factor'				'8.1'	
+'AB_Interaction'					
+'Error'			2		
+'Total_Variation'		200			

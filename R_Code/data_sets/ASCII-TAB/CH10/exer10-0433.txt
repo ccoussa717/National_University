@@ -1,0 +1,6 @@
+'Factor'	'Desc'	'Units'	'Low(-1)'	'High(+1)'
+'A'	'Time'	's'	30	120
+'B'	'Currcnt'	'amp'	0.6	3
+'C'	'EC'	'cm2'	57	91.2
+'D'	'Volume'	'L'	1	3
+'E'	'Arsenic'	'mg/L'	0.23	1.18

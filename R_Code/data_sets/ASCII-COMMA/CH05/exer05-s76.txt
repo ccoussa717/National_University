@@ -1,0 +1,6 @@
+'Col1','1st_line','2nd_line','3rd_line'
+'Blemish',15,12,20
+'Crack',50,44,40
+'Pull-tab',21,28,24
+'Surface defect',10,8,15
+'Other',4,8,2

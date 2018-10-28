@@ -1,0 +1,4 @@
+'Demand','Men','Women'
+'Low',1692,1324
+'Medium',1838,1352
+'High',1875,1311

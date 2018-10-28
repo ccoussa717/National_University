@@ -1,0 +1,6 @@
+'Supplier chosen:'	'Probability:'
+'A'	0.2
+'B'	0.25
+'C'	0.15
+'D'	0.3
+'E'	0.1

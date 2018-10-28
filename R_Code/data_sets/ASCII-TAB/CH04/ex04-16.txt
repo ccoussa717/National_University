@@ -1,0 +1,13 @@
+'Test'	'Conditions'	'Order'
+1	'M1A'	11
+2	'M1A'	3
+3	'M1A'	7
+4	'M2A'	1
+5	'M2A'	4
+6	'M2A'	5
+7	'M1B'	12
+8	'M1B'	2
+9	'M1B'	8
+10	'M2B'	10
+11	'M2B'	6
+12	'M2B'	9

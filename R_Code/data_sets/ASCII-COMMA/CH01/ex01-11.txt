@@ -1,0 +1,7 @@
+'Type of Defect','Frequency','Relative Frequency'
+'Low copper plating',112,0.615
+'Poor electrode coverage',35,0.192
+'Lamination problems',10,0.055
+'Plating separation',8,0.044
+'Etching problems',5,0.027
+'Miscellaneous',12,0.066

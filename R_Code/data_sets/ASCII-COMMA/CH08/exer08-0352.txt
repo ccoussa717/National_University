@@ -1,0 +1,5 @@
+'Vehicle_type','0_to_<10','10_thru_<20','>=20'
+'Subcompact',6,27,19
+'Compact',8,36,17
+'Midsize',21,45,33
+'Full-size',14,18,6
